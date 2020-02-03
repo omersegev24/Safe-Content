@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sansation'), url('/Sansation_Regular.woff') format('woff');
+}
+
+* {
+    text-align: center;
+    font-family: 'Sansation';
+}
+
+.user-table-container {
+    display:flex;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+th {
+    background-color: rgb(53, 107, 255);
+}
+
+td, th {
+    border: 1px solid;
+    padding: 8px;
+}
+tr {
+    width: 10vh;
+    height: 5vh;
+    padding: 8px;
+}
+
+.btn{
+    margin-bottom: 3vh;
+}
+
+.user-card-container{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding: 0;
+    margin: 6vh 6vh 4vh 6vh;
+    background-color: rgb(53, 107, 255);
+    width: 32vh;
+    height: 32vh;
+    border-radius: 40%;
+}

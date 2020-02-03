@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <section class="sign-in-container">
+        <div class="sign-in">
+            <input class="user" placeholder="User Name" />
+            <input type="password" class="password" placeholder="Password" />
+            <button class="btn btn-sign-in" onclick="onSignIn()">Sign in</button>
+        </div>
+    </section>
+
+    <section class="secret-container">
+        <div class="secret">
+            <button class="btn btn-log-out" onclick="onLogOut()">Log out</button>
+            <h5>User login: <span class="user-login"></span></h5>
+            <a class="admin-page-link" href="admin.html">To Admin Page</a>
+        </div>
+    </section>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/safe-service.js"></script>
+    <script src="js/safe-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body onload="onLoad()">
+    <h1>Admin Page</h1>
+    <button class="btn" onclick="onChagneMode('table')">table</button>
+    <button class="btn" onclick="onChagneMode('cards')">cards</button>
+
+    <section class="sort-container">
+        <span>Sort by:</span>
+        <select onchange="onSortChanged(this.value)">
+            <option>Name</option>
+            <option>Last login</option>
+        </select>
+    </section>
+
+    <div class="user-card-container"></div>
+
+    <div class="user-table-container">
+        <table>
+            <thead>
+                <th>Name </th>
+                <th>last log in</th>
+                <th>is admin</th>
+            </thead>
+            <tbody class="users-table"></tbody></table>
+    </div>
+
+
+
+
+
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/safe-service.js"></script>
+    <script src="js/admin-service.js"></script>
+    <script src="js/admin-controller.js"></script>
+</body>
+
+</html>
